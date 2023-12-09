@@ -10,7 +10,7 @@ public class ArithmeticOperation {
         System.out.println("\"" + stringRepresent + "\"");
 
         // Modulus Operation
-        ArithmeticExp term2 = new Modulus(new Number(50), new Product(new Number(5), new Number(20)));
+        ArithmeticExp term2 = new Modulus(new Number(10), new Number(4));
         System.out.println(term2.evaluate());
     }
 }

@@ -8,11 +8,13 @@ public class Modulus extends Binary {
     @Override
     public int evaluate() {
         int rightVal = right.evaluate();
-        if (rightVal == 0) {
-            // handle division by zero error
-            return -1;
-        }
-        return left.evaluate() % rightVal;
+        int leftVal = left.evaluate();
+        // if (rightVal == 0) {
+        // // handle division by zero error
+        // return -1;
+        // }
+        int modVal = leftVal % rightVal;
+        return modVal;
     }
 
     // String method for representation of string concat
