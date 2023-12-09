@@ -1,5 +1,5 @@
 class Number extends ArithmeticExp {
-    private int value;
+    private int value; // Encapsulation used - private restricted access
 
     public Number(int value) {
         this.value = value;
